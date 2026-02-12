@@ -1,0 +1,62 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+# 🔹 Pastas e arquivos da IDE JetBrains Rider
+.idea/
+*.sln.iml
+
+# 🔹 Configurações de execução da IDE
+*.sln.DotSettings
+*.sln.DotSettings.user
+
+# 🔹 Binários e compilação (C# / .NET)
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.ldb
+
+# 🔹 Arquivos gerados pelo Rider / ReSharper
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide
+*.resharper/
+_ReSharper.Caches/
+*.DotSettings.user
+
+# 🔹 Configurações específicas do Rider
+.idea/workspace.xml
+.idea/assetWizardSettings.xml
+.idea/markdown-navigator.xml
+.idea/modules.xml
+.idea/compiler.xml
+.idea/shelf/
+.idea/sonarlint/
+.idea/scopes/
+
+# 🔹 Arquivos temporários do Rider (opcional)
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/shelf/
+
+# 🔹 Pastas do NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# 🔹 Arquivos de logs e temporários
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# 🔹 Configurações locais do usuário
+.vscode/
