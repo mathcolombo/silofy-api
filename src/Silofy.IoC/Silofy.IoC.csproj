@@ -16,4 +16,16 @@
       <ProjectReference Include="..\Silofy.Infra\Silofy.Infra.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Shared\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Shared\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Shared\**" />
+    </ItemGroup>
+
 </Project>

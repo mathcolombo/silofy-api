@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <NoWarn>$(NoWarn);1591</NoWarn>
+        <UserSecretsId>05d8702e-9568-4fa8-b4df-d77ad4eb383a</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,4 +19,7 @@
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.6" />
     </ItemGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\Silofy.IoC\Silofy.IoC.csproj" />
+    </ItemGroup>
 </Project>

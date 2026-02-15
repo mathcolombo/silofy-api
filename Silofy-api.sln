@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silofy.Api", "src\Silofy.Api\Silofy.Api.csproj", "{6D6B0714-45CC-4947-BEC2-FB7F8825E091}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A71A606-F3D9-4365-9C83-4E8E6544AD77} = {6A71A606-F3D9-4365-9C83-4E8E6544AD77}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silofy.Domain", "src\Silofy.Domain\Silofy.Domain.csproj", "{023937DD-E1AF-4F49-A921-BA88B3543ACF}"
 EndProject
