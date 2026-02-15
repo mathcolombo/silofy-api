@@ -18,41 +18,44 @@ Diferente de um modelo anêmico, as entidades do Silofy possuem lógica própria
 ```mermaid
 classDiagram
     class EntityBase {
+        <<abstract>>
         +Guid Id
         +DateTime CreatedAt
         +DateTime UpdatedAt
     }
-    class User : EntityBase {
+
+    class User {
         +string Name
         +string Email
         +string PasswordHash
-        +List~Account~ Accounts
     }
-    class Account : EntityBase {
+
+    class Account {
         +string Name
         +Guid UserId
         +decimal TotalBalance$
-        +List~Silo~ Silos
     }
-    class Silo : EntityBase {
+
+    class Silo {
         +string Name
         +decimal CurrentBalance
         +bool IsDefault
         +Guid AccountId
-        +List~Category~ Categories
     }
-    class Category : EntityBase {
+
+    class Category {
         +string Name
         +bool IsDefault
         +Guid? UserId
-        +List~Silo~ Silos
     }
-    class SiloCategory : EntityBase {
+
+    class SiloCategory {
         +Guid SiloId
         +Guid CategoryId
         +Guid AccountId
     }
-    class Transaction : EntityBase {
+
+    class Transaction {
         +string Description
         +decimal Amount
         +DateTime Date
@@ -61,6 +64,13 @@ classDiagram
         +Guid CategoryId
         +Guid UserId
     }
+
+    User --|> EntityBase
+    Account --|> EntityBase
+    Silo --|> EntityBase
+    Category --|> EntityBase
+    SiloCategory --|> EntityBase
+    Transaction --|> EntityBase
 
     User "1" --o "n" Account : possui
     Account "1" --o "n" Silo : contém
