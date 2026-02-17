@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silofy.Infra", "src\Silofy.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silofy.IoC", "src\Silofy.IoC\Silofy.IoC.csproj", "{6A71A606-F3D9-4365-9C83-4E8E6544AD77}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3E89E178-DC6D-40CB-944C-9D8095BF750A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5052DC70-88FF-4490-B603-8C69DE7B1710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silofy.Sandbox", "tests\Silofy.Sandbox\Silofy.Sandbox.csproj", "{9E6A8E41-E08C-4B9F-93F8-F87E81947F75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,5 +45,13 @@ Global
 		{6A71A606-F3D9-4365-9C83-4E8E6544AD77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A71A606-F3D9-4365-9C83-4E8E6544AD77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A71A606-F3D9-4365-9C83-4E8E6544AD77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E6A8E41-E08C-4B9F-93F8-F87E81947F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E6A8E41-E08C-4B9F-93F8-F87E81947F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E6A8E41-E08C-4B9F-93F8-F87E81947F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E6A8E41-E08C-4B9F-93F8-F87E81947F75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D6B0714-45CC-4947-BEC2-FB7F8825E091} = {3E89E178-DC6D-40CB-944C-9D8095BF750A}
+		{9E6A8E41-E08C-4B9F-93F8-F87E81947F75} = {5052DC70-88FF-4490-B603-8C69DE7B1710}
 	EndGlobalSection
 EndGlobal

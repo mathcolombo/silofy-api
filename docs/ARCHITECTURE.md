@@ -19,7 +19,7 @@ Diferente de um modelo anêmico, as entidades do Silofy possuem lógica própria
 classDiagram
     class EntityBase {
         <<abstract>>
-        +Guid Id
+        +int Id
         +DateTime CreatedAt
         +DateTime UpdatedAt
     }
@@ -32,7 +32,7 @@ classDiagram
 
     class Account {
         +string Name
-        +Guid UserId
+        +int UserId
         +decimal TotalBalance$
     }
 
@@ -40,19 +40,19 @@ classDiagram
         +string Name
         +decimal CurrentBalance
         +bool IsDefault
-        +Guid AccountId
+        +int AccountId
     }
 
     class Category {
         +string Name
         +bool IsDefault
-        +Guid? UserId
+        +int? UserId
     }
 
     class SiloCategory {
-        +Guid SiloId
-        +Guid CategoryId
-        +Guid AccountId
+        +int SiloId
+        +int CategoryId
+        +int AccountId
     }
 
     class Transaction {
@@ -60,9 +60,9 @@ classDiagram
         +decimal Amount
         +DateTime Date
         +TransactionType Type
-        +Guid AccountId
-        +Guid CategoryId
-        +Guid UserId
+        +int AccountId
+        +int CategoryId
+        +int UserId
     }
 
     User --|> EntityBase

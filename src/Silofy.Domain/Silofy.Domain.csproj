@@ -6,4 +6,26 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Categories\Entities\" />
+      <Folder Include="SiloCategories\Entities\" />
+      <Folder Include="Transactions\Entities\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Users\Entities\ValueObjects\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Users\Entities\ValueObjects\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Users\Entities\ValueObjects\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DnsClient" Version="1.8.0" />
+    </ItemGroup>
+
 </Project>
