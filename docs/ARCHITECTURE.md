@@ -62,7 +62,8 @@ classDiagram
         +TransactionType Type
         +int AccountId
         +int CategoryId
-        +int UserId
+        +int? ToAccountId
+        +int? ToCategoryId
     }
 
     User --|> EntityBase
@@ -74,9 +75,13 @@ classDiagram
 
     User "1" --o "n" Account : possui
     Account "1" --o "n" Silo : contém
-    Silo "n" --o "n" Category : agrupa
-    Category "1" --o "n" Transaction : classifica
-    Account "1" --o "n" Transaction : registra
+    Silo "n" --o "n" Category : agrupa através de SiloCategory
+    
+    %% Relacionamentos da Transação
+    Transaction "n" --> "1" Account : Origem (AccountId)
+    Transaction "n" --> "0..1" Account : Destino (ToAccountId)
+    Transaction "n" --> "1" Category : Origem (CategoryId)
+    Transaction "n" --> "0..1" Category : Destino (ToCategoryId)
     User "1" --o "n" Transaction : dono
 ```
 

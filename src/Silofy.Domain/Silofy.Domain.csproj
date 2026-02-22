@@ -7,9 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Categories\Entities\" />
       <Folder Include="SiloCategories\Entities\" />
-      <Folder Include="Transactions\Entities\" />
     </ItemGroup>
 
     <ItemGroup>
