@@ -7,10 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="SiloCategories\Entities\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Remove="Users\Entities\ValueObjects\**" />
     </ItemGroup>
 
